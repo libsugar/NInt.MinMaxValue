@@ -5,11 +5,16 @@
     <Nullable>enable</Nullable>
 	<LangVersion>10.0</LangVersion>
 	<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+	<PackageProjectUrl>https://github.com/libsugar/NInt.MinMaxValue</PackageProjectUrl>
+	<Company>libsugar</Company>
+	<Authors>libsugar</Authors>
+	<RepositoryUrl>https://github.com/libsugar/NInt.MinMaxValue</RepositoryUrl>
+	<PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
+	<PackageLicenseFile>LICENSE.md</PackageLicenseFile>
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\NInt.MinMaxValue.Fallback\NInt.MinMaxValue.Fallback.csproj" Condition="'$(TargetFramework)' == 'netstandard2.0'" />
-    <ProjectReference Include="..\NInt.MinMaxValue.System\NInt.MinMaxValue.System.csproj" Condition="'$(TargetFramework)' == 'net5.0'" />
+    <None Include="..\LICENSE.md" Pack="true" PackagePath="" />
   </ItemGroup>
 
 </Project>
