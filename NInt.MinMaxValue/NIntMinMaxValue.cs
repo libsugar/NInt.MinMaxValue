@@ -1,8 +1,8 @@
-﻿using System;
+﻿namespace NInt.MinMaxValue;
 
-namespace NInt.MinMaxValue;
+#if NETSTANDARD
 
-#if NETSTANDARD 
+using System;
 
 public static class NIntMinMaxValue
 {
